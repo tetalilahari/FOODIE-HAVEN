@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Recipe Blog</title>
+</head>
+<body>
+    <!-- Header with navigation links -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Foodie Haven</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Recipe Finder Section -->
+    <div class="container2">
+        <h2>Recipe Finder</h2>
+        <p>Search mouth-watering recipes to satisfy your craving.</p>
+        <div class="searchBox">
+            <input type="text" placeholder="Search for recipes" id="searchInput">
+            <button onclick="searchRecipes()">Search</button>
+        </div>
+    </div>
+    
+    <div class="recipes" id="recipes"></div>
+    <div class="notfound" id="notfound">Search your favourite recipes!</div>
+
+    <!-- Popup Card for displaying recipe details -->
+    <div class="popup-card" id="popupCard">
+        <button class="close-btn" onclick="closeRecipes()">Close</button>
+        <h3 class="recipeTitle"></h3>
+        <p class="recipeDetails"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

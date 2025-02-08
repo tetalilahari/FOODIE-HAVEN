@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact - Recipe Blog</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Foodie Haven</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact">
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <p>If you have any questions, feedback, or suggestions, please fill out the form below. We'd love to hear from you!</p>
+            <form action="submit_form.html" method="post" class="contact-form">
+                <table>
+                    <tr>
+                        <td><label for="name">Your Name:</label></td>
+                        <td><input type="text" id="name" name="name" placeholder="Enter your full name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Your Email:</label></td>
+                        <td><input type="email" id="email" name="email" placeholder="Enter your email address" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone Number:</label></td>
+                        <td><input type="tel" id="phone" name="phone" placeholder="Enter your phone number"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="contact-method">Preferred Contact Method:</label></td>
+                        <td>
+                            <select id="contact-method" name="contact-method">
+                                <option value="email">Email</option>
+                                <option value="phone">Phone</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="message">Your Message:</label></td>
+                        <td><textarea id="message" name="message" placeholder="Write your message here" required></textarea></td>
+                    </tr>
+                </table>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Delicious Recipes</p>
+    </footer>
+</body>
+</html>
